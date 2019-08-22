@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+
+    <body>
+        <form action="form.html" method="POST">
+
+            <label for="meta">Meta:</label>
+                <input type="text" name="Meta" id="Meta">
+
+            <br>
+
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="Descripcion" id="descripcion"></textarea>
+
+            <br>
+
+            <label for="Plazo">Plazo:</label>
+                <select name="Plazo">
+                    <option value="1" selected>1 año</option> 
+                    <option value="3">3 años</option>
+                    <option value="5">5 años</option>
+                    <option value="10">10 años</option>
+                </select>
+
+            <br>
+
+            <label for="Indispensable">Es indispensable</label>
+                <input type="radio" name="indispensable" value="1">Si       
+                <input type="radio" name="indispensable" value="0">NO
+
+            <br>
+
+            <label for="cuando">Puedo realizarlo:</label>
+                <input type="checkbox" name="cuando" value="antes">Antes
+                <input type="checkbox" name="cuando" value="durante">Durante
+                <input type="checkbox" name="cuando" value="despues">Despues
+
+            <br>
+
+            <label for="password">Password:</label>
+                <input type="hidden" id="codigo" name="codigo" value="1234">
+                <input type="password" pattern=".{4}" name="password">
+
+            <br>
+
+            <button type="submit">Crear meta</button>
+        </form>
+    </body>
+</html>
